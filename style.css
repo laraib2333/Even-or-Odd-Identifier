@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    display: flex;
+    background: #d6e7f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 2px #1d436c;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(93, 93, 126);
+
+}
+label{
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(93, 93, 126);
+
+}
+input{
+    padding: .5rem;
+    background: rgba(93, 93, 126, 0.685);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
+.animated-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.animated-button:hover {
+    transform: translateY(-5px) rotateX(10deg); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+}
+
+.animated-button:active {
+    transform: translateY(2px) rotateX(0deg); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+#message{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007BFF;
+}
+@media (max-width: 1024px){
+    .container {
+        width: 80%; 
+        left: 9%; 
+        top: 20%; 
+        padding: 1.5rem;
+    }
+
+}
+@media (max-width: 768px) {
+    .container {
+        width: 80%; 
+        left: 10%; 
+        top: 20%; 
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    label {
+        font-size: 1.5rem; 
+    }
+
+    input {
+        width: 100%; 
+        font-size: 0.9rem; 
+    }
+
+    .animated-button {
+        padding: 10px 20px; 
+        font-size: 14px; 
+    }
+
+    #message {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; 
+    }
+
+    label {
+        font-size: 1.2rem; 
+    }
+
+    input {
+        font-size: 0.8rem;
+    }
+
+    .animated-button {
+        font-size: 12px; 
+    }
+
+    #message {
+        font-size: 0.8rem; 
+    }
+}
